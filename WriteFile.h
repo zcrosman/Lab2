@@ -6,28 +6,17 @@
 #include <fstream>
 using namespace std;
 
-// struct WriteFile
-// {
-   // ofstream output_file;
-   // bool closed;
-// };
-
-// WriteFile* createWriteFile(const char* file_name);
-// void destroyWriteFile(WriteFile* wf);
-// void writeLine(WriteFile* wf, String* line);
-// void close(WriteFile* wf);
-
 
 
 class WriteFile
 {
-	
-	public:
-		WriteFile* createWriteFile(const char* file_name);
-	
 	private:
-	
+		bool closed;
+		ofstream output_file;
+	public:
+		WriteFile(const char* file_name);
+		~WriteFile();
+		void writeLine();
+		void close();
 }
-
-
 #endif

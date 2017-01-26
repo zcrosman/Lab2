@@ -1,7 +1,7 @@
 #include "WriteFile.h"
 #include <sstream>
 
-WriteFile* createWriteFile(const char* file_name)
+WriteFile::WriteFile(const char* file_name)
 {
    WriteFile* wf = new WriteFile;
    wf->output_file.open(file_name);
@@ -9,7 +9,7 @@ WriteFile* createWriteFile(const char* file_name)
    return wf;
 }
 
-void destroyWriteFile(WriteFile* wf)
+WriteFile::~WriteFile(;)
 {
    close(wf);
    delete wf;
