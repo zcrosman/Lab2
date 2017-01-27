@@ -19,7 +19,7 @@ using namespace std;
 // bool eof(ReadFile* rf);
 // void close(ReadFile* rf);
 
-
+//finished
 
 
 
@@ -38,8 +38,8 @@ class ReadFile
 		~ReadFile();
 		String* readLine();
 		bool eof();
-		void close:
+		void close();
 
-}
+};
 
 #endif
